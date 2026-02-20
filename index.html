@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>Baruna Bali Resto</title>
+    <meta name="description" content="Restoran premium dengan menu terbaik dan suasana aesthetic. Lihat daftar menu dan harga terbaru kami.">
+    <meta name="keywords" content="restoran, fine dining, menu makanan, restoran aesthetic">
+    <meta name="author" content="Restoran Febri">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #0f0f0f;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* NAVBAR */
+        nav {
+            position: fixed;
+            width: 100%;
+            padding: 20px 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0,0,0,0.7);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+        }
+
+        nav h2 {
+            color: gold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: gold;
+        }
+
+        /* HERO */
+        .hero {
+            height: 100vh;
+            background: url('public/img/gambar1.jpeg') center/cover no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            background: linear-gradient(to right, gold, #fff);-webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .hero p {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        /* SECTION */
+        section {
+            padding: 50px 5%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 30px;
+            color: gold;
+        }
+
+        /* MENU */
+        .menu-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .menu-card {
+            background: #1a1a1a;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: 0.4s;
+            opacity: 0;
+            transform: translateY(50px);
+        }
+
+        .menu-card.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .menu-card:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .menu-content {
+            padding: 20px;
+        }
+
+        .menu-content h3 {
+            margin-bottom: 10px;
+        }
+
+        .price {
+            color: gold;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: #000;
+            color: gray;
+        }
+
+        /* RESPONSIVE */
+        @media(max-width:768px){
+            nav {
+                padding: 20px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2>BARUNA BALI RESTO</h2>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Kontak</a></li>
+        <li><a href="about.html">Abaout</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <div>
+        <h1>Fine Dining Experience</h1>
+        <p>Rasakan kelezatan premium dengan suasana aesthetic</p>
+    </div>
+</section>
+
+<!-- MENU -->
+<section id="menu">
+    <h2 class="section-title">Signature Menu</h2>
+
+    <div class="menu-container">
+
+        <div class="menu-card">
+            <img src="public/img/gambar2.jpeg">
+            <div class="menu-content">
+                <h3>Steak Wagyu Premium</h3>
+                <p>Daging wagyu pilihan dengan saus spesial chef.</p>
+                <div class="price">Rp 250.000</div>
+            </div>
+        </div>
+
+        <div class="menu-card">
+            <img src="public/img/gambar3.jpeg">
+            <div class="menu-content">
+                <h3>Pizza Truffle</h3>
+                <p>Pizza artisan dengan topping truffle dan keju premium.</p>
+                <div class="price">Rp 180.000</div>
+            </div>
+        </div>
+
+        <div class="menu-card">
+            <img src="public/img/gambar4.jpeg">
+            <div class="menu-content">
+                <h3>Gourmet Burger</h3>
+                <p>Burger juicy dengan roti brioche lembut.</p>
+                <div class="price">Rp 120.000</div>
+            </div>
+        </div>
+        <div class="menu-card">
+            <img src="public/img/gambar5.jpeg">
+            <div class="menu-content">
+                <h3>Gourmet Burger</h3>
+                <p>Burger juicy dengan roti brioche lembut.</p>
+                <div class="price">Rp 120.000</div>
+            </div>
+        </div>
+        <div class="menu-card">
+            <img src="public/img/gambar6.jpeg">
+            <div class="menu-content">
+                <h3>Gourmet Burger</h3>
+                <p>Burger juicy dengan roti brioche lembut.</p>
+                <div class="price">Rp 120.000</div>
+            </div>
+        </div>
+        <div class="menu-card">
+            <img src="public/img/gambar7.jpeg">
+            <div class="menu-content">
+                <h3>Gourmet Burger</h3>
+                <p>Burger juicy dengan roti brioche lembut.</p>
+                <div class="price">Rp 120.000</div>
+            </div>
+        </div>
+        <div class="menu-card">
+            <img src="public/img/gambar8.jpeg">
+            <div class="menu-content">
+                <h3>Gourmet Burger</h3>
+                <p>Burger juicy dengan roti brioche lembut.</p>
+                <div class="price">Rp 120.000</div>
+            </div>
+        </div>
+        <div class="menu-card">
+            <img src="public/img/gambar8.jpeg">
+            <div class="menu-content">
+                <h3>Gourmet Burger</h3>
+                <p>Burger juicy dengan roti brioche lembut.</p>
+                <div class="price">Rp 120.000</div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2 class="section-title">Lokasi & Kontak</h2>
+    <p style="text-align:center;">Jl. Raya Kuliner No. 123, Jakarta</p>
+    <p style="text-align:center; margin-top:10px;">WhatsApp: 0812-3456-7890</p>
+</section>
+
+<footer>
+    © 2026 Restoran Febri - All Rights Reserved
+</footer>
+
+<script>
+    // Scroll Animation
+    const cards = document.querySelectorAll('.menu-card');
+
+    window.addEventListener('scroll', () => {
+        const triggerBottom = window.innerHeight * 0.85;
+
+        cards.forEach(card => {
+            const cardTop = card.getBoundingClientRect().top;
+
+            if(cardTop < triggerBottom){
+                card.classList.add('show');
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
